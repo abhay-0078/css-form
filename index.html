@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Doctor Appointment</title>
+</head>
+<body>
+	<h1 align="center">CITY HOSPITAL</h1>
+	<p><b>Dr.xyz </b></p>
+	<p><i>MBBS,MD</i></p><hr>
+	<h3 align="center">Book an Appointment</h3>
+	<form action="submit.php" method="post">
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name" required>&emsp; &emsp;
+		
+		
+		<label for="weight">Weight(in kg):</label>
+		<input type="number" id="weight" name="weight" required><br><br>
+		<fieldset>
+            <legend>Gender</legend>
+            <p>
+                Male<input type="radio" name="gender" id="male" required><br>
+                Female<input type="radio" name="gender" id="female" required><br>
+            </p>
+        </fieldset><br><br>
+
+		<label for="temp">Temperature(in F):</label>
+		<input type="number" id="temp" name="temp" required><br><br>
+		
+		
+		<label for="phone">Phone:</label>
+		<input type="tel" id="phone" name="phone" required><br><br>
+		
+		<label for="date">Preferred Date:</label>
+		<input type="date" id="date" name="date" required><br><br>
+		
+		<label for="time">Preferred Time:</label>
+		<input type="time" id="time" name="time" required><br><br>
+		
+		<label for="message">Message:</label>
+		<textarea id="message" name="message" cols="40"rows=5></textarea><br><br>
+		
+		<input type="submit" value="Submit">
+	</form>
+</body>
+</html>
